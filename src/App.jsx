@@ -2,12 +2,13 @@
 import './App.css'
 import HomePage from './Pages/HomePage'
 import Footer from './components/Footer'
-import Header from './components/Header'
+
+import { NavbarDemo } from './components/Navbar'
 
 function App() {
   return (
     <>
-      <Header/>
+      <NavbarDemo/>
       <HomePage/>
       <Footer/>
     </>

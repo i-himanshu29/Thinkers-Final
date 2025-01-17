@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import toast from "react-hot-toast";
 const QaPage = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -23,10 +23,16 @@ const QaPage = () => {
     });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form Data Submitted:", formData);
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    toast.success("Q&A submitted successful!");
+    console.log("Form Data Submitted: ", formData);
   };
+
 
   return (
     <div className="min-h-screen flex p-6 items-center justify-center bg-gray-100">
