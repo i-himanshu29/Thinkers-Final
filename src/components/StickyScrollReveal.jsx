@@ -7,6 +7,7 @@ import img2 from "../assets/research-Photoroom.png"
 import img3 from "../assets/investorss-Photoroom.png"
 import img4 from "../assets/brain-Photoroom.png"
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const content = [
   {
@@ -30,7 +31,7 @@ const content = [
     ),
     button:(
         <Link to="/socializer">
-            <button className="text-red-900 font-bold text-xl border-2 bg-gray-400 rounded-md border-white w-36 h-8">Know more...</button>
+            <button><Button/></button>
     </Link>
     )
   },
@@ -51,7 +52,7 @@ const content = [
     ),
     button:(
         <Link to="/researcher">
-            <button className="text-red-900 font-bold text-xl border-2 bg-gray-400 rounded-md border-white w-36 h-8">Know more...</button>
+        <button><Button/></button>
     </Link>
     )
   },
@@ -74,7 +75,7 @@ const content = [
     ),
     button:(
         <Link to="/investor">
-            <button className="text-red-900 font-bold text-xl border-2 bg-gray-400 rounded-md border-white w-36 h-8">Know more...</button>
+        <button><Button/></button>
     </Link>
     )
   },
@@ -97,7 +98,7 @@ const content = [
     ),
     button:(
         <Link to="/trigger">
-            <button className="text-red-900 font-bold text-xl border-2 bg-gray-400 rounded-md border-white w-36 h-8">Know more...</button>
+        <button><Button/></button>
     </Link>
     )
   },

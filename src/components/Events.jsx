@@ -1,6 +1,7 @@
 import React from 'react'
 import img from "../assets/events.png"
 import { Link } from 'react-router-dom'
+import Button from './Button'
 function Events() {
   return (
     <div className="h-screen  justify-center mb-5 justify-items-center align-middle w-screen flex my-auto">
@@ -17,9 +18,7 @@ function Events() {
                 These events can be anything from hackathons to data collection drives to educational workshops. We want to create a community of users who are passionate about improving our search engine and making it the best it can be. Data collection drives: We could organize data collection drives where users help us to collect new data for our search engine. This could involve anything from scraping the web to transcribing historical documents. Educational workshops: We could host educational workshops to teach users about the importance of data quality and how to collect data responsibly. We could also teach users how to use our search engine and how to provide feedback to help us improve it. We believe that by engaging users in the data collection and curation process, we can create a search engine that is more accurate and relevant to the needs of our users.
             </h2>
             <Link to="/events" className="p-2  items-center">
-                <button className="text-xl mt-16 ml-3 hover:bg-slate-800  hover:text-white bg-gray-500 items-center  w-44 h-14 rounded-md border border-blue-950">
-                    Know More{`->`}
-                </button>
+                <button><Button/></button>
             </Link>
         </div>
         

@@ -4,17 +4,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
-// import { Link } from "react-router-dom";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
-// import { Link } from "react-router-dom";
-
 export function FloatingDockDemo() {
   const links = [
     {
@@ -50,7 +39,6 @@ export function FloatingDockDemo() {
   return (
     <div className="flex items-center justify-center h-20 w-full">
       <FloatingDock
-        // only for demo, remove for production
         mobileClassName="translate-y-20"
         items={links}
       />

@@ -35,11 +35,6 @@ const Registration = () => {
             own to create wealth and friendships.
         </p>
       </div>
-    {/* <div className="w-[40vw] h-[40vh] justify-between  "> */}
-      {/* <img src={img}/> */}
-      
-
-    {/* </div> */}
       <form
         className="bg-gray-300  p-6 my-24 rounded-lg shadow-md w-[60vw] max-w-md"
         onSubmit={handleSubmit}

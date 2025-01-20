@@ -12,6 +12,36 @@ function HeroSection() {
 };
   return (
     <>
+    <style>
+      {`
+        .btn-1 {
+          transition: all 0.5s;
+          font-size: 17px;
+          padding: 1ch 2ch;
+          background-color: white;
+          color: #000;
+          cursor: pointer;
+          border: none;
+          border-radius: 2px;
+          box-shadow:
+            2px 2px 0px hsl(0, 0%, 90%),
+            4px 4px 0px hsl(0, 0%, 80%),
+            6px 6px 0px hsl(0, 0%, 70%),
+            8px 8px 0px hsl(0, 0%, 60%),
+            10px 10px 0px hsl(0, 0%, 50%),
+            12px 12px 0px hsl(0, 0%, 40%),
+            14px 14px 0px hsl(0, 0%, 30%),
+            16px 16px 0px hsl(0, 0%, 20%),
+            18px 18px 0px hsl(0, 0%, 10%);
+        }
+
+        .btn-1:hover {
+          background-color: hsl(0, 0%, 50%);
+          color: #fff;
+          box-shadow: none;
+        }
+    `}
+    </style>
     <div className="h-screen  justify-center justify-items-center align-middle w-screen flex my-auto">
         <div className="flex-col items-center justify-center justify-items-center">
           <img
@@ -29,17 +59,15 @@ function HeroSection() {
             <h2 className="text-white text-6xl  text-center text-wrap mt-28 animate-move-left-right font-bold font-serif">"Empowering Minds,  Connecting Ideas ,Shaping the Future."</h2>
             <div className="mt-2 flex justify-between items-center">
               <div className="flex justify-items-start">
+              {/* <!-- From Uiverse.io by mobinkakei -->  */}
+
               <button 
-                onClick={handleMailClick}
-                className="text-xl hover:text-black hover:bg-red-300 mt-24 justify-start text-white bg-blue-900 w-32 h-14 rounded-md border border-blue-950">
-                    Email us{`->`}
-                </button>
+              onClick={handleMailClick}
+              class="btn-1">Mail us:</button>
               </div>
               <div className='flex justify-items-end'>
                 <Link to="/registration">
-                  <button className="text-xl hover:text-black hover:bg-red-300 mt-24 justify-self-end  text-white bg-blue-900 w-80 h-14 rounded-md border border-blue-950">
-                    Your Message is Our Mission{`->`}
-                </button>
+                <button class="btn-1">Your Message is Our Mission!</button>
                 </Link>
               </div>
               

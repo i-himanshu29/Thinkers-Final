@@ -4,10 +4,11 @@ import img2 from "../assets/Techevents.jpeg";
 import img3 from "../assets/Techevents3.jpg";
 import img4 from "../assets/Techevents4.png";
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 const images = [img1, img2, img3, img4];
 const descriptions = [
-    "We will continuously organize events to engage users in adding data to the platform, which can be further used to calibrate our search engine's accuracy. These events can be anything from hackathons to data collection drives to educational workshops.We want to create a community of users who are passionate about improving our search engine and making it the best it can be.",
+    "We will continuously organize events to engage users in adding data to the platform, which can be further used to calibrate our search engine's accuracy. These events can be anything from hackathons to data collection drives to educational workshops.We want to create a community of users who are passionate about improving our search engine and making it the best it can be.These events can be anything from hackathons to data collection drives to educational workshops. ",
     "We will continuously organize events to engage users in adding data to the platform, which can be further used to calibrate our search engine's accuracy. These events can be anything from hackathons to data collection drives to educational workshops.We want to create a community of users who are passionate about improving our search engine and making it the best it can be.",
     "We will continuously organize events to engage users in adding data to the platform, which can be further used to calibrate our search engine's accuracy. These events can be anything from hackathons to data collection drives to educational workshops.We want to create a community of users who are passionate about improving our search engine and making it the best it can be.",
     "We will continuously organize events to engage users in adding data to the platform, which can be further used to calibrate our search engine's accuracy. These events can be anything from hackathons to data collection drives to educational workshops.We want to create a community of users who are passionate about improving our search engine and making it the best it can be.",
@@ -51,7 +52,8 @@ function Carousel() {
                            <div className="flex-col bg-blue-50 p-10 border-3 justify-center justify-items-center h-[80%] rounded-2xl">
                               <p className=" text-justify text-md font-semibold text-gray-700 w-[70%]">{descriptions[current]}</p>
                               <Link to='/events'>
-                              <button className='ease-in duration-300 mt-5 text-white  bg-orange-700 hover:bg-orange-300 hover:shadow-xl hover:text-black focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none'>Know more</button>
+                              <button><Button/></button>
+                              {/* <button className='ease-in duration-300 mt-5 text-white  bg-orange-700 hover:bg-orange-300 hover:shadow-xl hover:text-black focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none'>Know more</button> */}
                               </Link>
                            </div>
                         </>
@@ -61,7 +63,8 @@ function Carousel() {
                            <div className="flex-col w-[40%]  p-10 justify-items-center bg-blue-50 h-[80%] border-3 rounded-2xl">
                             <p className="text-md text-justify font-semibold text-gray-700 w-[70%] ">{descriptions[current]}</p>
                             <Link to='/events'>
-                            <button className='ease-in duration-300 mt-5 text-white  bg-orange-700 hover:bg-orange-300 hover:shadow-xl hover:text-black focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none'>Know more</button>
+                            <button><Button/></button>
+                            {/* <button className='ease-in duration-300 mt-5 text-white  bg-orange-700 hover:bg-orange-300 hover:shadow-xl hover:text-black focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none'>Know more</button> */}
                             </Link>
                            </div>
                             {/* Image */}

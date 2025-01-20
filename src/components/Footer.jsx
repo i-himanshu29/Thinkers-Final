@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo1.png"
-import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
-import { FaDiscord } from "react-icons/fa";
 import { FloatingDockDemo } from './FooterDocks';
 export default function Footer() {
     return (
@@ -79,7 +75,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <Link to="/q&a" className="hover:underline">
-                                        Q & A
+                                        Q&A
                                     </Link>
                                 </li>
                                 <li>
@@ -114,7 +110,7 @@ export default function Footer() {
 
                     <div className="flex  justify-center items-center mt-4 space-x-5 sm:justify-center sm:mt-0">
                         <div className="w-36 h-10">
-                            <h1 className=" text-lg font-semibold ml-5 items-center font-sans">Follow us</h1>
+                            <h1 className=" text-lg font-semibold ml-5 mt-1.5 items-center font-sans">Follow us</h1>
                         </div>
                         <FloatingDockDemo/>
                     </div>

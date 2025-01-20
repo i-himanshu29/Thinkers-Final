@@ -2,22 +2,7 @@
 
 import React from "react";
 import reactElementToJSXString from "react-element-to-jsx-string";
-import { toast, Toaster } from "sonner";
 import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
-
-// Function to handle copying text to clipboard
-// const copyToClipboard = (text) => {
-//   navigator.clipboard
-//     .writeText(text)
-//     .then(() => {
-//       console.log("Text copied to clipboard:", text);
-//       toast.success("Copied to clipboard");
-//     })
-//     .catch((err) => {
-//       console.error("Error copying text to clipboard:", err);
-//       toast.error("Error copying to clipboard");
-//     });
-// };
 
 // TailwindcssButtons Component
 export function TailwindcssButtons() {
